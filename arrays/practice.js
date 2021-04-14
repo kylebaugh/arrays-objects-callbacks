@@ -19,6 +19,9 @@ var arr = [10,20,30];
 
 //Code Here
 
+function first(arr){
+  return (arr[0])
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -33,6 +36,10 @@ var arr = [40,50,60];
 */
 
 //Code Here
+
+function last(arr){
+  return(arr[arr.length -1])
+}
 
 
 
@@ -49,6 +56,15 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 
 //Code Here
 
+function looper(family){
+  let solution = '';
+  for (let i = 0; i < family.length; i++){
+    alert(family[i])
+    solution += (family[i] + " ")
+  }
+  return solution
+}
+
 
 
 ////////// PROBLEM 4 //////////
@@ -63,6 +79,16 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 */
 
 //Code Here
+
+function reversedLooper(letters){
+  // let solution = '';
+  for (let i = letters.length - 1; i >= 0; i--){
+    alert(letters[i])
+    console.log(letters[i])
+    // solution += (family[i] + ' ')
+  }
+  // return solution
+}
 
 
 
@@ -79,11 +105,14 @@ var nums = [1,2,3,6,22,98,45,23,22,12];
 
 //Code Here
 
-
-
-
-
-
+function evenFinder(nums){
+  let results = [];
+  for (let i = 0; i < nums.length; i++){
+    if (nums[i] % 2 === 0) 
+      results.push(nums[i]); 
+  }
+  return (results)
+}
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
@@ -107,6 +136,19 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 */
 
 //Code Here
+function divider(numbersArray){
+  let evens = [];
+  let odds = [];
+  let results = [evens, odds];
+  for (let i = 0; i < numbersArray.length; i++){
+    if (numbersArray[i] % 2 === 0)
+      evens.push(numbersArray[i])
+    else
+      odds.push(numbersArray[i])
+  }
+  return results
+
+}
 
 
 
@@ -119,7 +161,7 @@ var getRandomArbitrary = function() {
 // Do not edit the code above.
 
 /* 
-  var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+  // var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
   Above you're given a function (getRandomArbitrary) that will return a random number between 0 and 30.
   There is also a commented out array full of numbers to help you visualize what your function will be receiving.
   Write a function named finder that will take in an array as an argument.
@@ -130,6 +172,19 @@ var getRandomArbitrary = function() {
 
 //Code Here
 
+// var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
+
+function finder(arr){
+  let randomNumber = getRandomArbitrary()
+    for (let i=0; i < randomNumber.length -1; i++){
+      return i}
+      // if (randomNumber.includes(arr))
+      // if (randomNumber[i].includes(arr))
+      if (arr.includes(i))
+        return true
+      else
+        return false
+    }
 
 
 ////////// PROBLEM 8 //////////
@@ -169,7 +224,11 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
+function maker(){
+  let arr = [];
+    arr.from(new arr(215), (x, i) => i);
 
+}
 
 ////////// PROBLEM 10 //////////
 
